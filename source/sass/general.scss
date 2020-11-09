@@ -1,0 +1,20 @@
+body {
+  font-family: "PT Mono", "Roboto Condensed", "Helvetica", sans-serif;
+  font-style: normal;
+  text-transform: none;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: left;
+  background-color: $basic-light;
+  color: $basic-dark;
+  min-width: $mobile-min-width;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
