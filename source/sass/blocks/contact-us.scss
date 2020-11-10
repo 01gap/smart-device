@@ -1,0 +1,22 @@
+.contact-us {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-us__mail,
+.contact-us__tel {
+  display: block;
+  text-decoration: none;
+  color: $basic-light;
+  // padding-right: ;
+}
+
+.contact-us__icon-mail,
+.contact-us__icon-phone {
+  fill: $basic-blue;
+}
+
+.contact-us__callback {
+  text-decoration: none;
+  border: 1px solid $basic-light;
+}

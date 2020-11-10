@@ -6,6 +6,7 @@ const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
 const csso = require('gulp-csso');
+const minmax = require('postcss-media-minmax');
 const rename = require('gulp-rename');
 const imagemin = require('gulp-imagemin');
 const webp = require('gulp-webp');
@@ -39,7 +40,7 @@ exports.images = images;
 
 const sprite = () => {
   return gulp
-    .src('source/img/icon-{open-menu,close-menu,fb,insta,twitter}.svg')
+    .src('source/img/icon-{mail,phone,fb,ok,vk}.svg')
     .pipe(
       imagemin([
         imagemin.svgo({
@@ -81,7 +82,7 @@ const styles = () => {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
-    .pipe(postcss([autoprefixer()]))
+    .pipe(postcss([autoprefixer(), minmax()]))
     .pipe(gulp.dest('build/css'))
     .pipe(csso())
     .pipe(rename('styles.min.css'))

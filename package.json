@@ -16,6 +16,7 @@
     "gulp-sourcemaps": "2.6.5",
     "gulp-svgstore": "^7.0.1",
     "gulp-webp": "^4.0.1",
+    "postcss-media-minmax": "^4.0.0",
     "stylelint": "13.6.1",
     "stylelint-config-htmlacademy": "0.1.4"
   },

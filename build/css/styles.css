@@ -347,6 +347,11 @@ body {
   margin: 0;
   padding: 0; }
 
+h1,
+h2,
+h3 {
+  font-family: "Roboto Condensed", "Helvetica", sans-serif; }
+
 img {
   max-width: 100%;
   height: auto; }
@@ -360,3 +365,68 @@ img {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden; }
+
+.button {
+  display: block;
+  font-family: "Roboto Condensed", "Helvetica", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  border-radius: 5px; }
+
+.page-header {
+  height: 950px;
+  background-image: url("../img/bg-top-full-desktop.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #1b2d37; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .page-header {
+      background-image: url("../img/bg-top-full-desktop@2x.png"); } }
+  @media (max-width: 1023px) {
+    .page-header {
+      height: 638px; } }
+  @media (max-width: 768px) {
+    .page-header {
+      background-image: url("../img/bg-top-full-tablet.png"); } }
+  @media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 768px) and (min-resolution: 144dpi), (max-width: 768px) and (min-resolution: 1.5dppx) {
+    .page-header {
+      background-image: url("../img/bg-top-full-tablet@2x.png"); } }
+  @media (max-width: 767px) {
+    .page-header {
+      height: 500px; } }
+  @media (max-width: 320px) {
+    .page-header {
+      background-image: url("../img/bg-top-full-mobile.png"); } }
+  @media (max-width: 320px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 320px) and (min-resolution: 144dpi), (max-width: 320px) and (min-resolution: 1.5dppx) {
+    .page-header {
+      background-image: url("../img/bg-top-full-mobile@2x.png"); } }
+
+.page-header__top-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 253px;
+  padding-right: 256px;
+  padding-top: 33px; }
+  @media (min-width: 1921px) {
+    .page-header__top-wrapper {
+      width: 1411px;
+      margin: 0 auto; } }
+
+.contact-us {
+  display: flex;
+  flex-wrap: wrap; }
+
+.contact-us__mail,
+.contact-us__tel {
+  display: block;
+  text-decoration: none;
+  color: #ffffff; }
+
+.contact-us__icon-mail,
+.contact-us__icon-phone {
+  fill: #00b2ff; }
+
+.contact-us__callback {
+  text-decoration: none;
+  border: 1px solid #ffffff; }
