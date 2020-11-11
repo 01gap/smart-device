@@ -1,6 +1,8 @@
 .contact-us {
   display: flex;
   flex-wrap: wrap;
+  align-items: baseline;
+  padding-top: 4px;
 }
 
 .contact-us__mail,
@@ -8,7 +10,18 @@
   display: block;
   text-decoration: none;
   color: $basic-light;
-  // padding-right: ;
+  line-height: 18px;
+}
+
+.contact-us__tel {
+  margin-left: 88px;
+}
+
+.contact-us__tel span,
+.contact-us__mail span {
+  @media (max-width: $tablet-max-width) {
+    display: none;
+  }
 }
 
 .contact-us__icon-mail,
@@ -16,7 +29,38 @@
   fill: $basic-blue;
 }
 
+.contact-us__icon-phone {
+  position: relative;
+  top: 4px;
+  margin-right: 6px;
+
+  @media (max-width: $tablet-max-width) {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.contact-us__icon-mail {
+  position: relative;
+  top: 2px;
+  margin-right: 10px;
+}
+
 .contact-us__callback {
   text-decoration: none;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
   border: 1px solid $basic-light;
+  // margin-top: 4px;
+  margin-left: 50px;
+  padding-top: 13px;
+  padding-left: 25px;
+  padding-right: 27px;
+  padding-bottom: 15px;
+
+  @media (max-width: $tablet-max-width) {
+    display: none;
+  }
 }
