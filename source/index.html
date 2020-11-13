@@ -49,52 +49,71 @@
       </section>
     </header>
     <footer class="page-footer">
-      <a>
-        <img class="page-footer__logo-full" src="img/logo-full-footer.svg" width="216" height="52" alt="Сервис Девайс: умные технологии.">
-      </a>
-      <section class="page-footer__social social">
-        <h2 class="visually-hidden">Мы в социальных сетях</h2>
-        <a class="social__item" href="#" aria-label="Фейсбук.">
-          <svg class="social__icon social__icon--fb" width="27" height="27" aria-hidden="true">
-            <use xlink:href="img/sprite.svg#icon-fb"></use>
-          </svg>
-        </a>
-        <a class="social__item" href="#" aria-label="Одноклассники.">
-          <svg class="social__icon social__icon--ok" width="26.33" height="26" aria-hidden="true">
-            <use xlink:href="img/sprite.svg#icon-ok"></use>
-          </svg>
-        </a>
-        <a class="social__item" href="#" aria-label="Вконтакте">
-          <svg class="social__icon social__icon--vk" width="26.93" height="26" aria-hidden="true">
-            <use xlink:href="img/sprite.svg#icon-vk"></use>
-          </svg>
-        </a>
-      </section>
-      <nav class="page-footer__nav main-nav">
-        <h2 class="main-nave__title">Разделы сайта</h2>
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="#">О компании</a></li>
-          <li class="main-nav__item"><a href="#">Продукты</a></li>
-          <li class="main-nav__item"><a href="#">Производство печатных плат</a></li>
-          <li class="main-nav__item"><a href="#">Монтаж печатных плат</a></li>
-          <li class="main-nav__item"><a href="#">Комплектующие</a></li>
-          <li class="main-nav__item"><a href="#">Доставка</a></li>
-          <li class="main-nav__item"><a href="#">Контакты</a></li>
-        </ul>
-      </nav>
-      <section class="page-footer__address">
-        <h2 class="page-footer__address-title">Наш адрес</h2>
-        <p class="page-footer__address-text">
-          г. Мытищи, Олимпийский проспект,&nbsp;д.10 +7&nbsp;(495)&nbsp;589-40-50 +7&nbsp;(925)&nbsp;003-87-67 +7&nbsp;(926)&nbsp;926-080-79
-        </p>
-      </section>
+      <div class="page-footer__inner">
+        <div class="page-footer__logo-social">
+          <a>
+            <img class="page-footer__logo-full" src="img/logo-full-bottom.svg" width="216" height="52" alt="Сервис Девайс: умные технологии.">
+          </a>
+          <p class="page-footer__copyright-top">1999-2018 SD Service Devices</p>
+          <section class="page-footer__social social">
+            <h2 class="visually-hidden">Мы в социальных сетях</h2>
+            <a class="social__item" href="#" aria-label="Фейсбук.">
+              <svg class="social__icon social__icon--fb" width="27" height="27" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-fb"></use>
+              </svg>
+            </a>
+            <a class="social__item" href="#" aria-label="Одноклассники.">
+              <svg class="social__icon social__icon--ok" width="26.33" height="26" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-ok"></use>
+              </svg>
+            </a>
+            <a class="social__item" href="#" aria-label="Вконтакте">
+              <svg class="social__icon social__icon--vk" width="26.93" height="26" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-vk"></use>
+              </svg>
+            </a>
+          </section>
+        </div>
+        <div class="accordion">
+          <nav class="page-footer__nav main-nav">
+            <h2 class="main-nav__title">
+              <button class="accordion__button" disabled>
+                <span>Разделы сайта</span>
+              </button>
+            </h2>
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a href="#">О компании</a></li>
+              <li class="main-nav__item"><a href="#">Продукты</a></li>
+              <li class="main-nav__item"><a href="#">Производство печатных плат</a></li>
+              <li class="main-nav__item"><a href="#">Монтаж печатных плат</a></li>
+              <li class="main-nav__item"><a href="#">Комплектующие</a></li>
+              <li class="main-nav__item"><a href="#">Доставка</a></li>
+              <li class="main-nav__item"><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+          <section class="page-footer__address">
+            <h2 class="page-footer__address-title">
+              <button class="accordion__button" disabled>
+                <span>Наш адрес</span>
+              </button>
+            </h2>
+            <p class="page-footer__address-text">
+              г. Мытищи, Олимпийский проспект,&nbsp;д.10<br>
+              +7&nbsp;(495)&nbsp;589-40-50<br>
+              +7&nbsp;(925)&nbsp;003-87-67<br>
+              +7&nbsp;(926)&nbsp;926-080-79
+            </p>
+          </section>
+        </div>
+
+      </div>
+      <div class="page-footer__break"></div>
       <div class="page-footer__bottom">
         <p class="page-footer__reserved">Все права защищены</p>
-        <p class="page-footer__signature">1999-2018 SD Service Devices</p>
+        <p class="page-footer__copyright-bottom">1999-2018 SD Service Devices</p>
         <p class="page-footer__conditions"><a href="#">Условия конфиденциальности</a></p>
         <p class="page-footer__developed"><a href="#">Developed by Wow Studio</a></p>
       </div>
-
     </footer>
   </body>
 </html>

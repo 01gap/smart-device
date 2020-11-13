@@ -46,7 +46,7 @@ const sprite = () => {
         imagemin.svgo({
           plugins: [
             { removeViewBox: false },
-            { removeAttrs: { attrs: '(fill)' }}
+            // { removeAttrs: { attrs: '(fill)' }}
           ]
         })
       ])

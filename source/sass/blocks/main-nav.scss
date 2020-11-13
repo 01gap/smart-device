@@ -1,0 +1,29 @@
+.main-nav__title {
+  margin: 0;
+
+  span {
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #1b2d37;
+  }
+}
+
+.main-nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  columns: 2;
+  column-gap: 60px;
+}
+
+.main-nav__item a {
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: #1b2d37;
+  opacity: 0.5;
+}

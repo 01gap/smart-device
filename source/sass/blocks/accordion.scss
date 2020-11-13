@@ -1,0 +1,13 @@
+.accordion {
+  display: flex;
+  flex-wrap: wrap;
+  // justify-content: space-between;
+  margin-top: -8px;
+}
+
+.accordion__button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+}

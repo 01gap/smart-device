@@ -10,13 +10,8 @@
     background-image: url("../img/bg-top-full-desktop@2x.png");
   }
 
-  // @media (min-width: $beyond-desktop-width) {
-  //   background-position: center;
-  // }
-
   @media (max-width: $tablet-max-width) {
     height: 686px;
-    // background-position: 0 0;
   }
 
   @media (max-width: $tablet-model-width) {
@@ -34,7 +29,6 @@
 
   @media (max-width: $mobile-min-width) {
     background-image: url("../img/bg-top-full-mobile.png");
-    // height: 647px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-top-full-mobile@2x.png");
@@ -44,6 +38,7 @@
 
 .page-header__top-wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 1411px;
   margin: 0 auto;
@@ -51,10 +46,10 @@
   // padding-right: 256px;
   padding-top: 33px;
 
-  @media (min-width: $beyond-desktop-width) {
-    width: 1411px;
-    margin: 0 auto;
-  }
+  // @media (min-width: $beyond-desktop-width) {
+  //   width: 1411px;
+  //   margin: 0 auto;
+  // }
 
   @media (max-width: $median-desktop-width) {
     width: auto;
