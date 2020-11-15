@@ -1,0 +1,16 @@
+.page-main__wrapper {
+  min-height: 1260px;
+  background-image: url("../img/triangles-desktop.svg");
+  background-size: cover;
+  background-position: 0 -135px;
+  background-color: $basic-light;
+
+  @media (max-width: $tablet-max-width) {
+    min-height: 1113px;
+    background-image: url("../img/triangles-tablet.svg");
+  }
+
+  // @media (max-width: $mobile-max-width) {
+  //   min-height: ;
+  // }
+}
