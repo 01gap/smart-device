@@ -20,15 +20,28 @@
 
 .page-footer__logo-social {
   margin-right: 205px;
+
+  @media (max-width: $tablet-max-width) {
+    display: flex;
+    flex-wrap: wrap;
+    // padding-left: 25px;
+    // padding-right: 25px;
+    margin: 0;
+  }
 }
 
 .page-footer__logo-full {
-  // margin-left: -4px;
   margin-bottom: 45px;
 }
 
 .page-footer__copyright-top  {
   display: none;
+
+  @media (max-width: $tablet-max-width) {
+    display: block;
+    font-size: 13px;
+    line-height: 24px;
+  }
 }
 
 .page-footer__address-title {

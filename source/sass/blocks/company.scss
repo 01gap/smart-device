@@ -1,0 +1,135 @@
+.company {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 1170px;
+  box-sizing: border-box;
+  padding-left: 180px;
+  padding-bottom: 108px;
+  margin: 0 auto;
+
+  @media (max-width: $median-desktop-width) {
+    width: 920px;
+  }
+
+  @media (max-width: $tablet-max-width) {
+    width: 720px;
+    padding-left: 187px;
+    padding-bottom: 70px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    width: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 65px;
+  }
+}
+
+.company::before {
+  position: absolute;
+  content: "";
+  left: 2px;
+  top: 12px;
+  width: 115px;
+  height: 305px;
+  background-image: url("../img/bg-year-desktop.png");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-year-desktop@2x.png");
+  }
+
+  @media (max-width: $tablet-max-width) {
+    top: 8px;
+    width: 131px;
+    height: 347px;
+    background-image: url("../img/bg-year-tablet.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-year-tablet@2x.png");
+    }
+  }
+
+  @media (max-width: $mobile-max-width) {
+    display: none;
+  }
+}
+
+.company__title {
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+  margin: 0;
+  margin-bottom: 20px;
+
+  @media (max-width: $tablet-max-width) {
+    font-size: 32px;
+    line-height: 45px;
+    margin-bottom: 25px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    font-size: 28px;
+    line-height: 39px;
+    margin-bottom: 21px;
+  }
+}
+
+.company__text {
+  margin: 0;
+  margin-bottom: 20px;
+
+  @media (max-width: $mobile-max-width) {
+    margin-bottom: 25px;
+  }
+}
+
+.company__text-overflow {
+  @media (max-width: $mobile-max-width) {
+    margin-bottom: 6px;
+  }
+}
+
+// .company__text--overflow {
+//   @media (max-width: $tablet-max-width) {
+//     max-height: 22px * 4; // line-height * lines number
+//     overflow: hidden;
+//     text-overflow: "..";
+//   }
+// }
+
+.company__text-end {
+  @media (max-width: $tablet-max-width) {
+    position: relative;
+    display: inline-block;
+    padding-right: 15px;
+
+    &::after {
+      position: absolute;
+      content: "..";
+      width: 7px;
+      height: 5px;
+      right: 7px;
+      bottom: 17px;
+    }
+  }
+}
+
+.company__text-hidden {
+  @media (max-width: $tablet-max-width) {
+    display: none;
+  }
+}
+
+.company__more-details {
+  width: 180px;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: $basic-blue;
+  border: 1px solid $basic-blue;
+  padding-top: 13px;
+  padding-bottom: 16px;
+  margin-top: 20px;
+}

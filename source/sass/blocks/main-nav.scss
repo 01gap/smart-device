@@ -17,6 +17,10 @@
   margin: 0;
   columns: 2;
   column-gap: 60px;
+
+  @media (max-width: $tablet-max-width) {
+    columns: 1;
+  }
 }
 
 .main-nav__item a {
