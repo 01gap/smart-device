@@ -39,7 +39,8 @@
 .contact-us__mail span {
   position: relative;
 
-  &:hover::before {
+  &:hover::before,
+  &:focus::before {
     position: absolute;
     content: "";
     width: 100%;

@@ -16,6 +16,9 @@
     padding-left: 22px;
     padding-right: 22px;
   }
+
+  // @media (max-width: $tablet-max-width) {
+  // }
 }
 
 .page-footer__logo-social {
@@ -24,6 +27,7 @@
   @media (max-width: $tablet-max-width) {
     display: flex;
     flex-wrap: wrap;
+    flex-grow: 1;
     // padding-left: 25px;
     // padding-right: 25px;
     margin: 0;

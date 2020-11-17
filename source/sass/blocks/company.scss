@@ -34,9 +34,12 @@
   width: 115px;
   height: 305px;
   background-image: url("../img/bg-year-desktop.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-year-desktop@2x.png");
+    background-size: 115px 305px;
   }
 
   @media (max-width: $tablet-max-width) {
@@ -47,6 +50,7 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-year-tablet@2x.png");
+      background-size: 131px 347px;
     }
   }
 

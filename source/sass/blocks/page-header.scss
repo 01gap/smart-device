@@ -247,15 +247,16 @@
   opacity: 0.5;
   color: $basic-light;
   // transform: rotate(-90deg);
-  writing-mode: vertical-rl;
+  writing-mode: tb-rl;
+  // writing-mode: vertical-rl;
   transform: rotate(180deg);
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 1;
   }
 
-  &:active,
-  &:focus {
+  &:active {
     opacity: 0.8;
   }
 

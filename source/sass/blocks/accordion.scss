@@ -11,3 +11,12 @@
   padding: 0;
   margin: 0;
 }
+
+summary {
+  list-style: none;
+  // pointer-events: none;
+}
+
+// summary::-webkit-details-marker {
+//   display: none
+// }

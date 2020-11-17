@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Смарт Девайс: печатные платы</title>
-    <link rel="preload" href="fonts/roboto-condensed-v19-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/roboto-condensed-v19-latin_cyrillic-700.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/pt-mono-v8-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/roboto-condensed-v19-latin_cyrillic-regular.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/roboto-condensed-v19-latin_cyrillic-700.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/pt-mono-v8-latin_cyrillic-regular.woff2" as="font" type="font/woff2">
     <link rel="stylesheet" href="css/styles.min.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
@@ -14,7 +14,7 @@
       <div class="page-header__top-wrapper">
         <a>
           <div class="page-header__logo">
-            <img class="page-header__logo-circuit" src="img/logo-circuit.svg" width="52" height="52" aria-hidden="true">
+            <img class="page-header__logo-circuit" src="img/logo-circuit.svg" width="52" height="52" alt="Логотип Смарт Девайс.">
             <img class="page-header__logo-lettering" src="img/logo-text-header.svg" width="134" height="45" alt="Смарт Девайс: умные технологии.">
           </div>
         </a>
@@ -35,7 +35,6 @@
           <a class="contact-us__callback button" href="#">Заказать звонок</a>
         </section>
       </div>
-
       <section class="page-header__text">
         <div class="page-header__text-inner">
           <h1 class="page-header__title">Печатные платы</h1>
@@ -44,14 +43,14 @@
             <span class="page-header__consult-small">Бесплатная консультация</span>
             <span class="page-header__consult-large">Получить бесплатную консультацию</span>
           </a>
-          <a class="page-header__scroll" href="#">Скролл вниз</a>
+          <a class="page-header__scroll" href="#advantages">Скролл вниз</a>
         </div>
       </section>
     </header>
     <main class="page-main">
       <div class="page-main__wrapper">
-        <section class="advantages">
-          <h2 class="visually-hidden">Наши преимущества</h1>
+        <section class="advantages" id="advantages">
+          <h2 class="visually-hidden">Наши преимущества</h2>
           <ul class="advantages__list">
             <li class="advantages__item advantages__item--delay">
               <h3 class="advantages__item-title">Оперативные сроки</h3>
@@ -95,11 +94,11 @@
                     <!-- 1х: 270px; 2x: 540px -->
                     <source media="(min-width: 320px)" srcset="img/board-production-mobile.webp 1x, img/board-production-mobile@2x.webp 2x" type="image/webp">
                     <!-- 1х: 370px; 2x: 740px -->
-                    <source media="(min-width: 1024px)" srcset="img/board-production-desktop.jpg 1x, img/board-production-desktop@2x.jpg 2x">
+                    <source media="(min-width: 1024px)" srcset="img/board-production-desktop.png 1x, img/board-production-desktop@2x.png 2x">
                     <!-- 1х: 720px; 2x: 1440px -->
-                    <source media="(min-width: 321px)" srcset="img/board-production-tablet.jpg 1x, img/board-production-tablet@2x.jpg 2x">
+                    <source media="(min-width: 321px)" srcset="img/board-production-tablet.png 1x, img/board-production-tablet@2x.png 2x">
                     <!-- 1х: 290px; 2x: 580px -->
-                    <img class="service__image" src="img/board-production-mobile.jpg" srcset="img/board-production-mobile@2x.jpg 2x" width="290" height="256" alt="Автомат изготавливает печатную плату.">
+                    <img class="service__image" src="img/board-production-mobile.png" srcset="img/board-production-mobile@2x.png 2x" width="290" height="256" alt="Автомат изготавливает печатную плату.">
                   </picture>
                 </div>
               </a>
@@ -116,11 +115,11 @@
                     <!-- 1х: 270px; 2x: 540px -->
                     <source media="(min-width: 320px)" srcset="img/board-mount-mobile.webp 1x, img/board-mount-mobile@2x.webp 2x" type="image/webp">
                     <!-- 1х: 370px; 2x: 740px -->
-                    <source media="(min-width: 1024px)" srcset="img/board-mount-desktop.jpg 1x, img/board-mount-desktop@2x.jpg 2x">
+                    <source media="(min-width: 1024px)" srcset="img/board-mount-desktop.png 1x, img/board-mount-desktop@2x.png 2x">
                     <!-- 1х: 720px; 2x: 1440px -->
-                    <source media="(min-width: 321px)" srcset="img/board-mount-tablet.jpg 1x, img/board-mount-tablet@2x.jpg 2x">
+                    <source media="(min-width: 321px)" srcset="img/board-mount-tablet.png 1x, img/board-mount-tablet@2x.png 2x">
                     <!-- 1х: 290px; 2x: 580px -->
-                    <img class="service__image" src="img/board-mount-mobile.jpg" srcset="img/board-mount-mobile@2x.jpg 2x" width="290" height="256" alt="Паяльный автомат припаивает контакты процессора к плате.">
+                    <img class="service__image" src="img/board-mount-mobile.png" srcset="img/board-mount-mobile@2x.png 2x" width="290" height="256" alt="Паяльный автомат припаивает контакты процессора к плате.">
                   </picture>
                 </div>
               </a>
@@ -137,18 +136,22 @@
                     <!-- 1х: 270px; 2x: 540px -->
                     <source media="(min-width: 320px)" srcset="img/components-mobile.webp 1x, img/components-mobile@2x.webp 2x" type="image/webp">
                     <!-- 1х: 370px; 2x: 740px -->
-                    <source media="(min-width: 1024px)" srcset="img/components-desktop.jpg 1x, img/components-desktop@2x.jpg 2x">
+                    <source media="(min-width: 1024px)" srcset="img/components-desktop.png 1x, img/components-desktop@2x.png 2x">
                     <!-- 1х: 720px; 2x: 1440px -->
-                    <source media="(min-width: 321px)" srcset="img/components-tablet.jpg 1x, img/components-tablet@2x.jpg 2x">
+                    <source media="(min-width: 321px)" srcset="img/components-tablet.png 1x, img/components-tablet@2x.png 2x">
                     <!-- 1х: 290px; 2x: 580px -->
-                    <img class="service__image" src="img/components-mobile.jpg" srcset="img/components-mobile@2x.jpg 2x" width="290" height="256" alt="Светодиодная лента.">
+                    <img class="service__image" src="img/components-mobile.png" srcset="img/components-mobile@2x.png 2x" width="290" height="256" alt="Светодиодная лента.">
                   </picture>
                 </div>
               </a>
             </li>
           </ul>
         </div>
-
+      </section>
+      <section class="form-section">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <p class="form-section__title">Остались вопросы? Задайте их нам!</p>
+        <p class="form-section__subtitle">Мы проконсультируем Вас бесплатно</p>
 
       </section>
     </main>
@@ -178,37 +181,38 @@
             </a>
           </section>
         </div>
-        <div class="accordion">
+        <!-- <div class="accordion"> -->
           <nav class="page-footer__nav main-nav">
-            <h2 class="main-nav__title">
-              <button class="accordion__button" disabled>
-                <span>Разделы сайта</span>
-              </button>
-            </h2>
-            <ul class="main-nav__list">
-              <li class="main-nav__item"><a href="#">О компании</a></li>
-              <li class="main-nav__item"><a href="#">Продукты</a></li>
-              <li class="main-nav__item"><a href="#">Производство печатных плат</a></li>
-              <li class="main-nav__item"><a href="#">Монтаж печатных плат</a></li>
-              <li class="main-nav__item"><a href="#">Комплектующие</a></li>
-              <li class="main-nav__item"><a href="#">Доставка</a></li>
-              <li class="main-nav__item"><a href="#">Контакты</a></li>
-            </ul>
+            <details open>
+              <summary tabindex="-1">
+                <h2 class="main-nav__title">Разделы сайта</h2>
+              </summary>
+              <ul class="main-nav__list">
+                <li class="main-nav__item"><a href="#">О компании</a></li>
+                <li class="main-nav__item"><a href="#">Продукты</a></li>
+                <li class="main-nav__item"><a href="#">Производство печатных плат</a></li>
+                <li class="main-nav__item"><a href="#">Монтаж печатных плат</a></li>
+                <li class="main-nav__item"><a href="#">Комплектующие</a></li>
+                <li class="main-nav__item"><a href="#">Доставка</a></li>
+                <li class="main-nav__item"><a href="#">Контакты</a></li>
+              </ul>
+            </details>
           </nav>
           <section class="page-footer__address">
-            <h2 class="page-footer__address-title">
-              <button class="accordion__button" disabled>
-                <span>Наш адрес</span>
-              </button>
-            </h2>
-            <p class="page-footer__address-text">
-              г. Мытищи, Олимпийский проспект,&nbsp;д.10<br>
-              +7&nbsp;(495)&nbsp;589-40-50<br>
-              +7&nbsp;(925)&nbsp;003-87-67<br>
-              +7&nbsp;(926)&nbsp;926-080-79
-            </p>
-          </section>
-        </div>
+            <details open>
+              <summary>
+                <h2 class="page-footer__address-title">Наш адрес</h2>
+              </summary>
+              <p class="page-footer__address-text">
+                г. Мытищи, Олимпийский проспект,&nbsp;д.10<br>
+                +7&nbsp;(495)&nbsp;589-40-50<br>
+                +7&nbsp;(925)&nbsp;003-87-67<br>
+                +7&nbsp;(926)&nbsp;926-080-79
+              </p>
+            </section>
+            </details>
+
+        <!-- </div> -->
 
       </div>
       <div class="page-footer__break"></div>
