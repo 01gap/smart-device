@@ -1,0 +1,193 @@
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 570px;
+
+  @media (max-width: $tablet-max-width) {
+    width: 590.85px;
+    // justify-content: start;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    flex-direction: column;
+    width: auto;
+  }
+}
+
+.form > input {
+  display: block;
+  width: 270px;
+  height: 50px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 0;
+  padding-left: 17px;
+  padding-bottom: 5px;
+  margin-bottom: 40px;
+  font-size: 16px;
+  line-height: 22px;
+  color: $basic-light;
+  background-color: rgba($basic-light, 0.1);
+
+  @media (max-width: $median-desktop-width) {
+    width: 279.88px;
+    padding-left: 20px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    width: auto;
+    margin-bottom: 30.45px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: rgba($basic-light, 0.2);
+  }
+
+  &:active {
+    background-color: rgba($basic-light, 0.3);
+  }
+}
+
+.form > input::placeholder,
+.form > textarea::placeholder {
+  color: $basic-light;
+  opacity: 1;
+}
+
+.form > textarea {
+  display: block;
+  width: 570px;
+  min-height: 154px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 0;
+  color: $basic-light;
+  padding-left: 16px;
+  padding-top: 13px;
+  margin-bottom: 43px;
+  background-color: rgba($basic-light, 0.1);
+
+  @media (max-width: $median-desktop-width) {
+    width: 590.85px;
+    min-height: 159.63px;
+    padding-left: 20px;
+    padding-top: 15px;
+    margin-bottom: 46px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    width: auto;
+    min-height: 104px;
+    margin-bottom: 32px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: rgba($basic-light, 0.2);
+  }
+
+  &:active {
+    background-color: rgba($basic-light, 0.3);
+  }
+}
+
+.form__checkbox-wrapper label {
+  position: relative;
+  display: block;
+  padding-left: 40px;
+  font-size: 14px;
+  line-height: 16px;
+  color: $basic-light;
+  opacity: 0.8;
+  cursor: pointer;
+
+  @media (max-width: $median-desktop-width) {
+    padding-left: 40px;
+    padding-top: 2px;
+    margin-left: -5px;
+  }
+}
+
+.form__checkbox-wrapper label::before {
+  position: absolute;
+  content: "";
+  left: 8px;
+  top: 2px;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 1px solid $basic-light;
+}
+
+.form__checkbox-wrapper label::after {
+  position: absolute;
+  content: "";
+  left: 11px;
+  top: 7px;
+  width: 9px;
+  height: 6px;
+  background-image: url("../img/icon-tick.svg");
+  opacity: 0;
+}
+
+.form__checkbox-wrapper {
+  order: 2;
+  width: 270px;
+  padding-top: 7px;
+
+  input:checked + label::after {
+    opacity: 1;
+  }
+
+  input:hover + label::before,
+  input:focus + label::before {
+    background-color: rgba($basic-light, 0.1);
+  }
+
+  input:active + label::before {
+    background-color: rgba($basic-light, 0.2);
+  }
+}
+
+.form > button {
+  display: block;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $basic-light;
+  background-color: transparent;
+  box-sizing: border-box;
+  width: 270px;
+  padding-top: 13px;
+  padding-bottom: 15px;
+  border: none;
+  border: 1px solid $basic-light;
+  border-radius: 5px;
+
+  @media (max-width: $median-desktop-width) {
+    width: 279.88px;
+    margin-left: 3px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    width: auto;
+    margin-left: 0;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: rgba($basic-light, 0.2);
+    cursor: pointer;
+  }
+
+  &:active {
+    background-color: rgba($basic-light, 0.3);
+  }
+}

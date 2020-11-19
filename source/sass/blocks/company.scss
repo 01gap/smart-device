@@ -5,7 +5,7 @@
   width: 1170px;
   box-sizing: border-box;
   padding-left: 180px;
-  padding-bottom: 108px;
+  padding-bottom: 110px;
   margin: 0 auto;
 
   @media (max-width: $median-desktop-width) {
@@ -15,7 +15,7 @@
   @media (max-width: $tablet-max-width) {
     width: 720px;
     padding-left: 187px;
-    padding-bottom: 70px;
+    padding-bottom: 85px;
   }
 
   @media (max-width: $mobile-max-width) {
@@ -81,7 +81,7 @@
 
 .company__text {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 
   @media (max-width: $mobile-max-width) {
     margin-bottom: 25px;
@@ -89,8 +89,10 @@
 }
 
 .company__text-overflow {
+  margin-bottom: 19px;
+
   @media (max-width: $mobile-max-width) {
-    margin-bottom: 6px;
+    margin-bottom: 8px;
   }
 }
 
@@ -133,7 +135,7 @@
   letter-spacing: 0.05em;
   color: $basic-blue;
   border: 1px solid $basic-blue;
-  padding-top: 13px;
-  padding-bottom: 16px;
+  padding-top: 11px;
+  padding-bottom: 15px;
   margin-top: 20px;
 }

@@ -1,0 +1,79 @@
+.form-section {
+  background-color: $basic-blue;
+  background-image: url("../img/bg-form-desktop.png");
+  background-size: cover 100%;
+  background-position: 185px -45px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-form-desktop@2x.png");
+    background-size: cover;
+    background-position: 145px -60px;
+  }
+
+  @media (max-width: $median-desktop-width) {
+    background-image: none;
+  }
+}
+
+.form-section__inner {
+  width: 570px;
+  padding-top: 91px;
+  padding-left: 600px;
+  padding-bottom: 112px;
+  margin: 0 auto;
+
+  @media (max-width: $median-desktop-width) {
+    padding-top: 77px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 590.85px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    padding-top: 28px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: auto;
+  }
+}
+
+.form-section__title {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 36px;
+  line-height: 51px;
+  color: $basic-light;
+  margin: 0;
+  margin-left: -4px;
+  margin-bottom: 10px;
+
+  @media (max-width: $median-desktop-width) {
+    font-size: 32px;
+    line-height: 45px;
+    margin-left: -2px;
+    margin-bottom: 18px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    font-size: 28px;
+    line-height: 39px;
+    margin-left: 0;
+    margin-bottom: 14px;
+  }
+}
+
+.form-section__subtitle {
+  color: $basic-light;
+  margin: 0;
+  margin-bottom: 51px;
+
+  @media (max-width: $median-desktop-width) {
+    margin-bottom: 55px;
+    margin-left: 4px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    margin-bottom: 27px;
+    margin-left: 0;
+  }
+}
+

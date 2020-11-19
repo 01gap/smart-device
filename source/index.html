@@ -149,10 +149,21 @@
         </div>
       </section>
       <section class="form-section">
-        <h2 class="visually-hidden">Форма обратной связи</h2>
-        <p class="form-section__title">Остались вопросы? Задайте их нам!</p>
-        <p class="form-section__subtitle">Мы проконсультируем Вас бесплатно</p>
-
+        <div class="form-section__inner">
+          <h2 class="visually-hidden">Форма обратной связи</h2>
+          <p class="form-section__title">Остались вопросы? Задайте их нам!</p>
+          <p class="form-section__subtitle">Мы проконсультируем Вас бесплатно</p>
+          <form class="form" action="#" method="get">
+            <input type="text" name="name" value="" aria-label="Ваше имя." placeholder="Имя" required>
+            <input type="tel" name="phone" value="" aria-label="Ваш номер телефона." placeholder="Телефон" required>
+            <textarea name="message" cols="30" rows="4" aria-label="Ваш вопрос." placeholder="Ваш вопрос" required></textarea>
+            <div class="form__checkbox-wrapper">
+              <input class="visually-hidden" id="checkbox-accept" type="checkbox" name="accept" value="accept" checked required>
+              <label for="checkbox-accept">Я согласен на обработку персональных данных</label>
+            </div>
+            <button type="submit" name="button">Задать вопрос</button>
+          </form>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
