@@ -39,16 +39,11 @@
   }
 }
 
-// .service > a:hover,
-// .service > a:focus {
-//   outline: 2px solid $basic-blue;
-// }
-
 a:hover > .service__image-wrapper {
   background-color: rgba($basic-light, 0.2);
 }
 
- a:active > .service__image-wrapper {
+a:active > .service__image-wrapper {
   background-color: rgba($basic-blue, 0.1);
 }
 

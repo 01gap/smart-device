@@ -39,7 +39,7 @@
         <div class="page-header__text-inner">
           <h1 class="page-header__title">Печатные платы</h1>
           <p class="page-header__subtitle">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-          <a class="page-header__consult button" href="#">
+          <a class="page-header__consult button" href="#form-section">
             <span class="page-header__consult-small">Бесплатная консультация</span>
             <span class="page-header__consult-large">Получить бесплатную консультацию</span>
           </a>
@@ -148,15 +148,15 @@
           </ul>
         </div>
       </section>
-      <section class="form-section">
+      <section class="form-section" id="form-section">
         <div class="form-section__inner">
           <h2 class="visually-hidden">Форма обратной связи</h2>
           <p class="form-section__title">Остались вопросы? Задайте их нам!</p>
           <p class="form-section__subtitle">Мы проконсультируем Вас бесплатно</p>
           <form class="form" action="#" method="get">
             <input type="text" name="name" value="" aria-label="Ваше имя." placeholder="Имя" required>
-            <input type="tel" name="phone" value="" aria-label="Ваш номер телефона." placeholder="Телефон" required>
-            <textarea name="message" cols="30" rows="4" aria-label="Ваш вопрос." placeholder="Ваш вопрос" required></textarea>
+            <input type="tel" name="phone" value="" pattern="^\+7(\([0-9]{3}\))|([0-9]{3})[0-9]{7}$" aria-label="Ваш номер телефона." placeholder="Телефон" maxlength="14" required>
+            <textarea name="message" cols="25" rows="4" aria-label="Ваш вопрос." placeholder="Ваш вопрос" maxlength="500" required></textarea>
             <div class="form__checkbox-wrapper">
               <input class="visually-hidden" id="checkbox-accept" type="checkbox" name="accept" value="accept" checked required>
               <label for="checkbox-accept">Я согласен на обработку персональных данных</label>
@@ -201,8 +201,8 @@
               <ul class="main-nav__list">
                 <li class="main-nav__item"><a href="#">О компании</a></li>
                 <li class="main-nav__item"><a href="#">Продукты</a></li>
-                <li class="main-nav__item"><a href="#">Производство печатных плат</a></li>
-                <li class="main-nav__item"><a href="#">Монтаж печатных плат</a></li>
+                <li class="main-nav__item"><a href="#">Производство&nbsp;печатных&nbsp;плат</a></li>
+                <li class="main-nav__item"><a href="#">Монтаж&nbsp;печатных&nbsp;плат</a></li>
                 <li class="main-nav__item"><a href="#">Комплектующие</a></li>
                 <li class="main-nav__item"><a href="#">Доставка</a></li>
                 <li class="main-nav__item"><a href="#">Контакты</a></li>
@@ -235,5 +235,6 @@
       </div>
     </footer>
     <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

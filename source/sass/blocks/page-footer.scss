@@ -5,59 +5,129 @@
 .page-footer__inner {
   display: flex;
   flex-wrap: wrap;
-  // justify-content: space-between;
+  justify-content: space-between;
+  align-items: start;
   width: 1411px;
   margin: 0 auto;
   padding-top: 65px;
-  padding-bottom: 65px;
+  padding-bottom: 57px;
 
   @media (max-width: $median-desktop-width) {
+    flex-grow: 1;
     width: auto;
-    padding-left: 22px;
-    padding-right: 22px;
+    padding-top: 18px;
+    padding-bottom: 35px;
   }
 
-  // @media (max-width: $tablet-max-width) {
-  // }
+  @media (max-width: $mobile-max-width) {
+    flex-direction: column;
+    align-items: ce;
+  }
 }
 
 .page-footer__logo-social {
-  margin-right: 205px;
+  margin-left: -3px;
 
-  @media (max-width: $tablet-max-width) {
+  @media (max-width: $median-desktop-width) {
     display: flex;
     flex-wrap: wrap;
-    flex-grow: 1;
-    // padding-left: 25px;
-    // padding-right: 25px;
-    margin: 0;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid rgba(#626962, 0.2);
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    flex-direction: column;
+    align-items: center;
+    width: auto;
   }
 }
 
-.page-footer__logo-full {
-  margin-bottom: 45px;
+.page-footer__social {
+  margin-top: 47px;
+
+  @media (max-width: $median-desktop-width) {
+    margin-top: 10px;
+  }
 }
 
-.page-footer__copyright-top  {
+
+.page-footer__copyright-top {
   display: none;
 
-  @media (max-width: $tablet-max-width) {
+  @media (max-width: $median-desktop-width) {
     display: block;
     font-size: 13px;
     line-height: 24px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #1B2D37;
+    opacity: 0.5;
+    padding-top: 4px;
+    padding-left: 10px;
   }
 }
 
-.page-footer__address-title {
-  margin: 0;
+.page-footer__nav {
+  @media (max-width: $median-desktop-width) {
+    width: 50%;
+    padding-left: 27px;
+    padding-top: 36px;
+  }
 
-  span {
-    font-size: 15px;
-    font-weight: normal;
-    line-height: 16px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: #1b2d37;
+  @media (max-width: $mobile-max-width) {
+    width: auto;
+  }
+}
+
+.page-footer__address {
+  @media (max-width: $median-desktop-width) {
+    width: 50%;
+    padding-left: 17px;
+    padding-top: 36px;
+    padding-right: 22px;
+    box-sizing: border-box;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    width: auto;
+  }
+}
+
+
+.page-footer__address-title {
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #1b2d37;
+  margin: 0;
+  margin-bottom: 26px;
+}
+
+.page-footer__address summary {
+  pointer-events: none;
+
+  @media (max-width: $mobile-max-width) {
+    position: relative;
+    pointer-events: initial;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .page-footer__address:not([open]) summary::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    bottom: 0;
+    right: 0;
+    background-image: url("../img/icon-union.svg");
   }
 }
 
@@ -86,13 +156,22 @@
 .page-footer__bottom {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   width: 1411px;
   margin: 0 auto;
+  padding-top: 12px;
+  padding-bottom: 5px;
 
   @media (max-width: $median-desktop-width) {
     width: auto;
-    padding-left: 22px;
-    padding-right: 22px;
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-top: 20px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    flex-direction: column;
+    margin: 0 auto;
   }
 }
 
@@ -104,9 +183,35 @@
   line-height: 24px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #1B2D37;
+  color: #1b2d37;
   opacity: 0.5;
   margin: 0;
+}
+
+.page-footer__reserved {
+  margin-left: -4px;
+
+  @media (max-width: $median-desktop-width) {
+    display: none;
+  }
+}
+
+.page-footer__copyright-bottom {
+  margin-left: -260px;
+
+  @media (max-width: $median-desktop-width) {
+    display: none;
+  }
+}
+
+.page-footer__conditions {
+  margin-left: -200px;
+  padding-right: 70px;
+
+  @media (max-width: $median-desktop-width) {
+    margin-left: 0;
+    padding-right: 0;
+  }
 }
 
 .page-footer__conditions a,
