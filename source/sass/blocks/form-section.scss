@@ -3,6 +3,7 @@
   background-image: url("../img/bg-form-desktop.png");
   background-size: cover 100%;
   background-position: 185px -45px;
+  background-repeat: no-repeat;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-form-desktop@2x.png");

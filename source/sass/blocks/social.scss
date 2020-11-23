@@ -3,6 +3,19 @@
   flex-wrap: wrap;
 }
 
+.social__item {
+  fill: #cdcdcd;
+
+  &:hover,
+  &:focus {
+    fill: $basic-blue;
+  }
+
+  &:active {
+    fill: rgba($basic-blue, 0.6);
+  }
+}
+
 .social__item + .social__item {
   margin-left: 16px;
 }

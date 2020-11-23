@@ -59,7 +59,7 @@
 .form > textarea {
   display: block;
   width: 570px;
-  min-height: 154px;
+  height: 154px;
   box-sizing: border-box;
   border: none;
   border-radius: 0;
@@ -71,7 +71,7 @@
 
   @media (max-width: $median-desktop-width) {
     width: 590.85px;
-    min-height: 159.63px;
+    height: 159.63px;
     padding-left: 20px;
     padding-top: 15px;
     margin-bottom: 46px;
@@ -79,7 +79,7 @@
 
   @media (max-width: $mobile-max-width) {
     width: auto;
-    min-height: 104px;
+    height: 104px;
     margin-bottom: 32px;
     padding-left: 17px;
   }

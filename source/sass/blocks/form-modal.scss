@@ -1,0 +1,37 @@
+.form-modal {
+  flex-direction: column;
+  width: auto;
+  align-items: center;
+}
+
+.form-modal > input {
+  width: 411.44px;
+  height: 51.83px;
+  flex-grow: 1;
+  padding-left: 25px;
+  margin-bottom: 30px;
+}
+
+.form-modal > textarea {
+  width: 411.44px;
+  min-height: 104px;
+  flex-grow: 1;
+  padding-left: 25px;
+  margin-bottom: 30px;
+}
+
+.form-modal > button {
+  width: 411.44px;
+  margin-bottom: 27px;
+}
+
+.form-modal__checkbox-wrapper {
+  width: 400px;
+  box-sizing: border-box;
+  margin-left: -8px;
+  align-self: start;
+}
+
+.form-modal__checkbox-wrapper label {
+  padding-left: 55px;
+}

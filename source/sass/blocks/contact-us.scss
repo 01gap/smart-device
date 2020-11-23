@@ -19,8 +19,6 @@
   text-decoration: none;
   color: $basic-light;
   line-height: 18px;
-  // padding-left: 3px;
-  // padding-right: 3px;
 }
 
 .contact-us__tel {
@@ -79,6 +77,15 @@
     width: 24px;
     height: 24px;
     margin-right: 0;
+
+    &:hover,
+    &:focus {
+      fill: lighten($basic-blue, 35%);
+    }
+
+    &:active {
+      fill: darken($basic-blue, 20%);
+    }
   }
 }
 
@@ -91,6 +98,15 @@
     width: 25.33px;
     height: 18.67px;
     margin-right: 0;
+
+    &:hover,
+    &:focus {
+      fill: lighten($basic-blue, 35%);
+    }
+
+    &:active {
+      fill: darken($basic-blue, 20%);
+    }
   }
 }
 

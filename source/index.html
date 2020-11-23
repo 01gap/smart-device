@@ -155,7 +155,7 @@
           <p class="form-section__subtitle">Мы проконсультируем Вас бесплатно</p>
           <form class="form" action="#" method="get">
             <input type="text" name="name" value="" aria-label="Ваше имя." placeholder="Имя" required>
-            <input type="tel" name="phone" value="" pattern="^\+7(\([0-9]{3}\))|([0-9]{3})[0-9]{7}$" aria-label="Ваш номер телефона." placeholder="Телефон" maxlength="14" required>
+            <input type="tel" name="phone" value="" pattern="^\+7(\([0-9]{3}\))[0-9]{7}$" aria-label="Ваш номер телефона." placeholder="Телефон" maxlength="14" required>
             <textarea name="message" cols="25" rows="4" aria-label="Ваш вопрос." placeholder="Ваш вопрос" maxlength="500" required></textarea>
             <div class="form__checkbox-wrapper">
               <input class="visually-hidden" id="checkbox-accept" type="checkbox" name="accept" value="accept" checked required>
@@ -163,6 +163,23 @@
             </div>
             <button type="submit" name="button">Задать вопрос</button>
           </form>
+        </div>
+      </section>
+      <section class="modal modal--closed">
+        <div class="modal__inner">
+          <h2 class="modal__title">Закажите звонок</h2>
+          <p class="modal__subtitle">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+          <form class="form form-modal" action="#" method="get">
+            <input type="text" name="name" value="" aria-label="Ваше имя." placeholder="Имя" required>
+            <input type="tel" name="phone" value="" pattern="^\+7(\([0-9]{3}\)[0-9]{7}$" aria-label="Ваш номер телефона." placeholder="Телефон" maxlength="14" required>
+            <textarea name="message" cols="25" rows="4" aria-label="Ваш вопрос." placeholder="Ваш вопрос" maxlength="500" required></textarea>
+            <div class="form__checkbox-wrapper form-modal__checkbox-wrapper">
+              <input class="visually-hidden" id="checkbox-accept" type="checkbox" name="accept" value="accept" checked required>
+              <label for="checkbox-accept">Я согласен на обработку персональных данных</label>
+            </div>
+            <button type="submit" name="button">Отправить</button>
+          </form>
+          <button class="modal__close"><span class="visually-hidden">Закрыть окно</span></button>
         </div>
       </section>
     </main>
@@ -192,39 +209,35 @@
             </a>
           </section>
         </div>
-        <!-- <div class="accordion"> -->
-          <nav class="page-footer__nav main-nav">
-            <details open>
-              <summary tabindex="-1">
-                <h2 class="main-nav__title">Разделы сайта</h2>
-              </summary>
-              <ul class="main-nav__list">
-                <li class="main-nav__item"><a href="#">О компании</a></li>
-                <li class="main-nav__item"><a href="#">Продукты</a></li>
-                <li class="main-nav__item"><a href="#">Производство&nbsp;печатных&nbsp;плат</a></li>
-                <li class="main-nav__item"><a href="#">Монтаж&nbsp;печатных&nbsp;плат</a></li>
-                <li class="main-nav__item"><a href="#">Комплектующие</a></li>
-                <li class="main-nav__item"><a href="#">Доставка</a></li>
-                <li class="main-nav__item"><a href="#">Контакты</a></li>
-              </ul>
-            </details>
-          </nav>
-          <section class="page-footer__address">
-            <details open>
-              <summary>
-                <h2 class="page-footer__address-title">Наш адрес</h2>
-              </summary>
-              <p class="page-footer__address-text">
-                г. Мытищи, Олимпийский проспект,&nbsp;д.10<br>
-                +7&nbsp;(495)&nbsp;589-40-50<br>
-                +7&nbsp;(925)&nbsp;003-87-67<br>
-                +7&nbsp;(926)&nbsp;926-080-79
-              </p>
-            </section>
-            </details>
-
-        <!-- </div> -->
-
+        <nav class="page-footer__nav main-nav accordion">
+          <button class="accordion__button" aria-expanded="true" aria-controls="nav-panel" disabled>
+              <h2 class="main-nav__title">Разделы сайта</h2>
+          </button>
+          <div class="accordion__panel" id="nav-panel">
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a href="#">О компании</a></li>
+              <li class="main-nav__item"><a href="#">Продукты</a></li>
+              <li class="main-nav__item"><a href="#">Производство&nbsp;печатных&nbsp;плат</a></li>
+              <li class="main-nav__item"><a href="#">Монтаж&nbsp;печатных&nbsp;плат</a></li>
+              <li class="main-nav__item"><a href="#">Комплектующие</a></li>
+              <li class="main-nav__item"><a href="#">Доставка</a></li>
+              <li class="main-nav__item"><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </nav>
+        <section class="page-footer__address accordion">
+          <button class="accordion__button" aria-expanded="true" aria-controls="address-panel" disabled>
+            <h2 class="page-footer__address-title">Наш офис</h2>
+          </button>
+          <div class="accordion__panel" id="address-panel">
+            <p class="page-footer__address-text">
+              г. Мытищи, Олимпийский проспект,&nbsp;д.10<br>
+              <a href="tel:+74955894050">+7&nbsp;(495)&nbsp;589-40-50</a><br>
+              <a href="tel:+79250038767">+7&nbsp;(925)&nbsp;003-87-67</a><br>
+              <a href="tel:+79269260879">+7&nbsp;(926)&nbsp;926-080-79</a>
+            </p>
+          </div>
+        </section>
       </div>
       <div class="page-footer__break"></div>
       <div class="page-footer__bottom">

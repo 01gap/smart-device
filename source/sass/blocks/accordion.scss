@@ -1,22 +1,57 @@
-.accordion {
-  display: flex;
-  flex-wrap: wrap;
-  // justify-content: space-between;
-  margin-top: -8px;
-}
-
 .accordion__button {
+  position: relative;
   background-color: transparent;
   border: none;
   padding: 0;
-  margin: 0;
+  width: 100%;
+  text-align: left;
+
+  @media (max-width: $mobile-max-width) {
+    border-top: 1px solid rgba(#626962, 0.2);
+
+    &:hover,
+    &:focus {
+      outline: 1px solid rgba($basic-blue, 0.8);
+    }
+  }
 }
 
-summary {
-  list-style: none;
-  // pointer-events: none;
+.accordion__button--closed::before {
+  @media (max-width: $mobile-max-width) {
+    position: absolute;
+    content: "";
+    top: 28px;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/icon-plus.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
 }
 
-// summary::-webkit-details-marker {
-//   display: none
-// }
+.accordion__button--opened::before {
+  @media (max-width: $mobile-max-width) {
+    position: absolute;
+    content: "";
+    top: 33px;
+    right: 0;
+    width: 16px;
+    height: 2px;
+    background-image: url("../img/icon-minus.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+}
+
+.accordion__panel--closed {
+  @media (max-width: $mobile-max-width) {
+    display: none;
+  }
+}
+
+.accordion__panel {
+  @media (max-width: $mobile-max-width) {
+    padding-top: 5px;
+  }
+}

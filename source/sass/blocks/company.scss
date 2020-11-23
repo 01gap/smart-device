@@ -96,14 +96,6 @@
   }
 }
 
-// .company__text--overflow {
-//   @media (max-width: $tablet-max-width) {
-//     max-height: 22px * 4; // line-height * lines number
-//     overflow: hidden;
-//     text-overflow: "..";
-//   }
-// }
-
 .company__text-end {
   @media (max-width: $tablet-max-width) {
     position: relative;
@@ -128,6 +120,7 @@
 }
 
 .company__more-details {
+  position: relative;
   width: 180px;
   font-size: 14px;
   line-height: 16px;
@@ -138,4 +131,13 @@
   padding-top: 11px;
   padding-bottom: 15px;
   margin-top: 20px;
+
+  &:hover {
+    background-color: rgba($basic-blue, 0.2);
+  }
+
+  &:active,
+  &:focus {
+    background-color: rgba($basic-blue, 0.1);
+  }
 }
