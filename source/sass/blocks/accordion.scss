@@ -1,13 +1,22 @@
+.accordion {
+  @media (max-width: $mobile-max-width) {
+    position: relative;
+  }
+}
+
 .accordion__button {
-  position: relative;
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  width: 100%;
-  text-align: left;
+  display: none;
 
   @media (max-width: $mobile-max-width) {
-    border-top: 1px solid rgba(#626962, 0.2);
+    display: block;
+    position: absolute;
+    top: 18px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
 
     &:hover,
     &:focus {
@@ -20,8 +29,8 @@
   @media (max-width: $mobile-max-width) {
     position: absolute;
     content: "";
-    top: 28px;
-    right: 0;
+    top: 12px;
+    right: 12px;
     width: 16px;
     height: 16px;
     background-image: url("../img/icon-plus.svg");
@@ -34,8 +43,8 @@
   @media (max-width: $mobile-max-width) {
     position: absolute;
     content: "";
-    top: 33px;
-    right: 0;
+    top: 20px;
+    right: 12px;
     width: 16px;
     height: 2px;
     background-image: url("../img/icon-minus.svg");

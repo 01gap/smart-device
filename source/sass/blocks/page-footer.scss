@@ -21,7 +21,7 @@
 
   @media (max-width: $mobile-max-width) {
     padding-top: 44px;
-    padding-bottom: 27px;
+    padding-bottom: 0;
     flex-direction: column;
   }
 }
@@ -90,14 +90,14 @@
     width: 50%;
     box-sizing: border-box;
     padding-left: 24px;
-    padding-top: 36px;
+    padding-top: 31px;
   }
 
   @media (max-width: $mobile-max-width) {
     width: 100%;
     padding-top: 0;
     padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 17px;
   }
 }
 
@@ -105,7 +105,7 @@
   @media (max-width: $median-desktop-width) {
     width: 50%;
     padding-left: 17px;
-    padding-top: 36px;
+    padding-top: 31px;
     padding-right: 22px;
     box-sizing: border-box;
   }
@@ -113,7 +113,7 @@
   @media (max-width: $mobile-max-width) {
     width: 100%;
     padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 17px;
     padding-top: 0;
   }
 }
@@ -132,6 +132,9 @@
 
   @media (max-width: $mobile-max-width) {
     padding-top: 30px;
+    padding-bottom: 26px;
+    margin-bottom: 0;
+    border-top: 1px solid rgba(#626962, 0.2);
   }
 }
 
@@ -142,6 +145,10 @@
   color: #1b2d37;
   opacity: 0.5;
   margin: 0;
+
+  @media (max-width: $mobile-max-width) {
+    padding-bottom: 27px;
+  }
 }
 
 .page-footer__address-text a {

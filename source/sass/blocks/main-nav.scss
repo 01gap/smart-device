@@ -15,7 +15,10 @@
 
   @media (max-width: $mobile-max-width) {
     padding-top: 27px;
-    margin-bottom: 27px;
+    padding-bottom: 27px;
+    border-top: 1px solid rgba(#626962, 0.2);
+    margin-bottom: 0;
+    padding-bottom: 27px;
     margin-left: 0;
   }
 }
@@ -30,6 +33,10 @@
   @media (max-width: $median-desktop-width) {
     columns: 1;
     column-gap: 0;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    padding-bottom: 20px;
   }
 }
 

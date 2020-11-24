@@ -2,8 +2,8 @@
 
 (function() {
   const forms = document.querySelectorAll('.form');
-  const firstNames = document.querySelectorAll('input[type="text"]');
-  const phones = document.querySelectorAll('input[type="tel"]');
+  const firstNames = document.querySelectorAll('input[type=text]');
+  const phones = document.querySelectorAll('input[type=tel]');
   const messages = document.querySelectorAll('textarea');
   const formSection = document.querySelector('.form-section');
 
@@ -194,32 +194,45 @@
     closePopup();
   }
 
+  /* set focus on opening popup */
+
+  const setFocus = () => {
+    if (firstNames[1].value === '') {
+      firstNames[1].focus();
+    } else if (phones[1].value === '') {
+      phones[1].focus();
+    }  else if (messages[1].value === '') {
+      messages[1].focus();
+    }
+  };
+
   /* show popup */
+  const openPopup = () => {
+    popup.classList.remove('modal--closed');
+    addDataToPopupForm();
+    setFocus();
+    setPhoneMask(phones[1]);
+    forms[1].addEventListener('submit', onSubmitStoreDataClosePopup);
+    popupClose.addEventListener('click', onClickClosePopup);
+    window.addEventListener('keydown', onEscPressClosePopup);
+    popup.addEventListener('mouseup', onClickOutsideClose);
+  };
+
   if (popupForm.flag) {
     contactUsLink.addEventListener('click', (evt) => {
       evt.preventDefault();
-      popup.classList.remove('modal--closed');
-      addDataToPopupForm();
-      if (firstNames[1] === null) {
-        firstNames[1].focus();
-      }
-      setPhoneMask(phones[1]);
-      forms[1].addEventListener('submit', onSubmitStoreDataClosePopup);
-      popupClose.addEventListener('click', onClickClosePopup);
-      window.addEventListener('keydown', onEscPressClosePopup);
-      popup.addEventListener('mouseup', onClickOutsideClose);
+      openPopup();
     });
   }
 
   /* accordion */
-  const mQuery = window.matchMedia('(max-width: 767px)');
+  const mQueryMobile = window.matchMedia('(max-width: 767px)');
   const accordionButtons = document.querySelectorAll('.accordion__button');
 
-  if (mQuery.matches && accordionButtons !== null) {
+  if (mQueryMobile.matches && accordionButtons !== null) {
     accordionButtons.forEach(button => {
-      button.removeAttribute('disabled');
       button.classList.add('accordion__button--closed')
-      const hiddenText = button.parentNode.childNodes[3];
+      const hiddenText = button.parentNode.parentNode.childNodes[3];
       hiddenText.classList.add('accordion__panel--closed');
 
       button.addEventListener('click', () => {
