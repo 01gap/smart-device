@@ -56,6 +56,17 @@
   opacity: 1;
 }
 
+.form > label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .form > textarea {
   display: block;
   width: 570px;
@@ -93,6 +104,17 @@
   &:active {
     background-color: rgba($basic-light, 0.3);
   }
+}
+
+.form__checkbox-wrapper > input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .form__checkbox-wrapper label {

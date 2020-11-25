@@ -350,11 +350,6 @@ body {
   margin: 0;
   padding: 0; }
 
-h1,
-h2,
-h3 {
-  font-family: "Roboto Condensed", "Helvetica", sans-serif; }
-
 img {
   max-width: 100%;
   height: auto; }
@@ -368,6 +363,9 @@ img {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden; }
+
+.title {
+  font-family: "Roboto Condensed", "Helvetica", sans-serif; }
 
 .button {
   display: block;
@@ -939,7 +937,6 @@ img {
       padding-bottom: 27px;
       border-top: 1px solid rgba(98, 105, 98, 0.2);
       margin-bottom: 0;
-      padding-bottom: 27px;
       margin-left: 0; } }
 
 .main-nav__list {
@@ -1517,6 +1514,16 @@ a:active > .service__image-wrapper {
   color: #ffffff;
   opacity: 1; }
 
+.form > label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
 .form > textarea {
   display: block;
   width: 570px;
@@ -1547,6 +1554,16 @@ a:active > .service__image-wrapper {
     background-color: rgba(255, 255, 255, 0.2); }
   .form > textarea:active {
     background-color: rgba(255, 255, 255, 0.3); }
+
+.form__checkbox-wrapper > input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
 
 .form__checkbox-wrapper label {
   position: relative;
