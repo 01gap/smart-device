@@ -2,10 +2,11 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="description" content="Компания Смарт Девайс производит и монтирует печатные платы, а также поставляет световое оборудование">
     <title>Смарт Девайс: печатные платы</title>
-    <link rel="preload" href="fonts/roboto-condensed-v19-latin_cyrillic-regular.woff2" as="font" type="font/woff2">
-    <link rel="preload" href="fonts/roboto-condensed-v19-latin_cyrillic-700.woff2" as="font" type="font/woff2">
-    <link rel="preload" href="fonts/pt-mono-v8-latin_cyrillic-regular.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/roboto-condensed-v19-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/roboto-condensed-v19-latin_cyrillic-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/pt-mono-v8-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="css/styles.min.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
@@ -54,18 +55,30 @@
           <ul class="advantages__list">
             <li class="advantages__item advantages__item--delay">
               <h3 class="advantages__item-title title">Оперативные сроки</h3>
+              <svg class="advantages__icon advantages-icon--stopwatch" width="29" height="35" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-stopwatch"></use>
+              </svg>
               <p class="advantages__text">Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки.</p>
             </li>
             <li class="advantages__item advantages__item--suppliers">
               <h3 class="advantages__item-title title">Крупные поставщики</h3>
+              <svg class="advantages__icon advantages-icon--suppliers" width="35" height="35" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-suppliers"></use>
+              </svg>
               <p class="advantages__text">Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
             </li>
             <li class="advantages__item advantages__item--confidentiality">
               <h3 class="advantages__item-title title">Полная конфиденциальность</h3>
+              <svg class="advantages__icon advantages-icon--confidentiality" width="36" height="31" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-confidentiality"></use>
+              </svg>
               <p class="advantages__text">По желанию клиента  мы обеспечиваем полную конфеденциальность.</p>
             </li>
             <li class="advantages__item advantages__item--price">
               <h3 class="advantages__item-title title">Персонализация стоимости</h3>
+              <svg class="advantages__icon advantages-icon--tag" width="35" height="35" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-tag"></use>
+              </svg>
               <p class="advantages__text">Мы  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
             </li>
           </ul>
@@ -217,8 +230,11 @@
         </div>
         <nav class="page-footer__nav main-nav accordion">
           <div class="accordion__toggle-wrapper">
-            <h2 class="main-nav__title title">Разделы сайта</h2>
-            <button class="accordion__button" aria-expanded="true" aria-controls="nav-panel"><span class="visually-hidden">Открыть панель навигации</span> </button>
+            <h2 class="main-nav__title title">
+              <button class="accordion__button" aria-expanded="true" aria-controls="nav-panel" disabled>
+                <span>Разделы сайта</span>
+              </button>
+            </h2>
           </div>
           <div class="accordion__panel" id="nav-panel">
             <ul class="main-nav__list">
@@ -234,8 +250,11 @@
         </nav>
         <section class="page-footer__address accordion">
           <div class="accordion__toggle-wrapper">
-            <h2 class="page-footer__address-title title">Наш офис</h2>
-            <button class="accordion__button" aria-expanded="true" aria-controls="nav-panel"><span class="visually-hidden">Открыть адрес</span> </button>
+            <h2 class="page-footer__address-title title">
+              <button class="accordion__button" aria-expanded="true" aria-controls="nav-panel">
+                <span>Наш офис</span>
+              </button>
+            </h2>
           </div>
           <div class="accordion__panel" id="address-panel">
             <p class="page-footer__address-text">

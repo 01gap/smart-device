@@ -380,33 +380,33 @@ img {
 
 .page-header {
   height: 878px;
-  background-image: url("../img/bg-top-full-desktop.png");
+  background-image: url("../img/bg-top-full-desktop.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-color: #1b2d37; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .page-header {
-      background-image: url("../img/bg-top-full-desktop@2x.png"); } }
+      background-image: url("../img/bg-top-full-desktop@2x.jpg"); } }
   @media (max-width: 1023px) {
     .page-header {
       height: 686px; } }
   @media (max-width: 770px) {
     .page-header {
-      background-image: url("../img/bg-top-full-tablet.png");
+      background-image: url("../img/bg-top-full-tablet.jpg");
       background-position: right; } }
   @media (max-width: 770px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 770px) and (min-resolution: 144dpi), (max-width: 770px) and (min-resolution: 1.5dppx) {
     .page-header {
-      background-image: url("../img/bg-top-full-tablet@2x.png"); } }
+      background-image: url("../img/bg-top-full-tablet@2x.jpg"); } }
   @media (max-width: 767px) {
     .page-header {
       height: 647px; } }
   @media (max-width: 320px) {
     .page-header {
-      background-image: url("../img/bg-top-full-mobile.png"); } }
+      background-image: url("../img/bg-top-full-mobile.jpg"); } }
   @media (max-width: 320px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 320px) and (min-resolution: 144dpi), (max-width: 320px) and (min-resolution: 1.5dppx) {
     .page-header {
-      background-image: url("../img/bg-top-full-mobile@2x.png"); } }
+      background-image: url("../img/bg-top-full-mobile@2x.jpg"); } }
 
 .page-header__top-wrapper {
   display: flex;
@@ -1001,20 +1001,13 @@ img {
     position: relative; } }
 
 .accordion__button {
-  display: none; }
+  background-color: transparent;
+  width: 100%;
+  border: none;
+  padding: 0; }
   @media (max-width: 767px) {
-    .accordion__button {
-      display: block;
-      position: absolute;
-      top: 18px;
-      right: 5px;
-      width: 40px;
-      height: 40px;
-      background-color: transparent;
-      border: none;
-      padding: 0; }
-      .accordion__button:hover, .accordion__button:focus {
-        outline: 1px solid rgba(0, 178, 255, 0.8); } }
+    .accordion__button:hover, .accordion__button:focus {
+      outline: 1px solid rgba(0, 178, 255, 0.8); } }
 
 @media (max-width: 767px) {
   .accordion__button--closed::before {

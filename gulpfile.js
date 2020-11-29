@@ -40,7 +40,7 @@ exports.images = images;
 
 const sprite = () => {
   return gulp
-    .src('source/img/icon-{mail,phone,fb,ok,vk,plus,minus}.svg')
+    .src('source/img/icon-{mail,phone,fb,ok,vk,stopwatch,suppliers,tag,confidentiality}.svg')
     .pipe(
       imagemin([
         imagemin.svgo({

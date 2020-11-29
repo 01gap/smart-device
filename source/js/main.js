@@ -229,6 +229,8 @@
   const mQueryMobile = window.matchMedia('(max-width: 767px)');
   const accordionButtons = document.querySelectorAll('.accordion__button');
 
+  // const otherButtons = accordionButtons.slice().splice(button,1);
+
   if (mQueryMobile.matches && accordionButtons !== null) {
     accordionButtons.forEach(button => {
       button.classList.add('accordion__button--closed')
