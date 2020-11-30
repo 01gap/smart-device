@@ -1025,7 +1025,7 @@ img {
     .accordion__button {
       box-sizing: border-box;
       cursor: pointer; }
-      .accordion__button:active, .accordion__button:focus {
+      .accordion__button:active, .accordion__button:focus, .accordion__button:hover {
         outline: 1px solid rgba(0, 178, 255, 0.8);
         outline-offset: 10px; } }
 

@@ -19,7 +19,8 @@
     cursor: pointer;
 
     &:active,
-    &:focus {
+    &:focus,
+    &:hover {
       outline: 1px solid rgba($basic-blue, 0.8);
       outline-offset: 10px;
     }
