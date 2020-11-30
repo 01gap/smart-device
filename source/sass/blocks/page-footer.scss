@@ -98,6 +98,7 @@
     padding-top: 0;
     padding-left: 15px;
     padding-right: 17px;
+    border-top: 1px solid rgba(#626962, 0.2);
   }
 }
 
@@ -115,9 +116,9 @@
     padding-left: 15px;
     padding-right: 17px;
     padding-top: 0;
+    border-top: 1px solid rgba(#626962, 0.2);
   }
 }
-
 
 .page-footer__address-title {
   margin: 0;
@@ -134,10 +135,9 @@
 
 
   @media (max-width: $mobile-max-width) {
-    padding-top: 30px;
-    padding-bottom: 26px;
+    padding-top: 18px;
+    padding-bottom: 25px;
     margin-bottom: 0;
-    border-top: 1px solid rgba(#626962, 0.2);
   }
 }
 
@@ -259,7 +259,7 @@
   }
 
   @media (max-width: $mobile-max-width) {
-    padding-bottom: 25px;
+    padding-bottom: 22px;
   }
 }
 

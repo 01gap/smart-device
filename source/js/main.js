@@ -248,6 +248,7 @@
     if (otherToggles.length) {
       otherToggles.forEach(function (otherToggle) {
         if (otherToggle.classList.contains('accordion__button--opened')) {
+          otherToggle.classList.remove('accordion__button--opened');
           setInitialToggle(otherToggle);
           setInitialPanel(otherToggle);
         }

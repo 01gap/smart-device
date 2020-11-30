@@ -1,6 +1,6 @@
 .main-nav__title {
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 21px;
 
   span {
     font-size: 15px;
@@ -17,9 +17,8 @@
   }
 
   @media (max-width: $mobile-max-width) {
-    padding-top: 27px;
-    padding-bottom: 27px;
-    border-top: 1px solid rgba(#626962, 0.2);
+    padding-top: 20px;
+    padding-bottom: 25px;
     margin-bottom: 0;
     margin-left: 0;
   }

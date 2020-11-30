@@ -16,16 +16,6 @@
     background-image: url("../img/button-flash.svg");
   }
 
-  // @media (max-width: 1219px) {
-  //   &:not(:nth-child(3n)) {
-  //     margin-right: 0;
-  //   }
-
-  //   &:not(:nth-child(2n)) {
-  //     margin-right: 30px;
-  //   }
-  // }
-
   @media (max-width: $tablet-max-width) {
     margin-bottom: 45px;
 
@@ -83,12 +73,10 @@ a:active > .service__image-wrapper {
 
 .service__image-wrapper {
   width: 370px;
-  // min-width: 31.62%;
-  // min-width: 300px;
   height: 620px;
 
   @media (max-width: 1250px) {
-    width: 300px;
+    width: 295px;
   }
 
   @media (max-width: $tablet-max-width) {

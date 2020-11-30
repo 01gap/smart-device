@@ -64,7 +64,7 @@
     height: 50%;
     bottom: 0;
     right: -6px;
-    background-color: rgba(saturate($basic-blue, 30%), 0.4); // rgba($basic-light, 0.4);
+    background-color: rgba(saturate($basic-blue, 30%), 0.4);
   }
 
   @media (max-width: $tablet-max-width) {

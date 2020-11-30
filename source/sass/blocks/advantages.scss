@@ -41,7 +41,7 @@
   min-height: 299px;
   box-sizing: border-box;
   padding-left: 42px;
-  padding-top: 93px;
+  padding-top: 40px;
   margin-bottom: 30px;
   border: 1px solid #ebebeb;
   border-left: 3px solid $basic-blue;
@@ -52,12 +52,6 @@
     margin-right: 30px;
   }
 
-  &::before {
-    position: absolute;
-    content: "";
-    left: 42px;
-  }
-
   @media (max-width: $median-desktop-width) {
     width: 445px;
   }
@@ -65,7 +59,7 @@
   @media (max-width: $tablet-max-width) {
     width: 345px;
     padding-left: 25px;
-    padding-top: 65px;
+    padding-top: 24px;
     border-left: 2px solid $basic-blue;
 
     &--delay,
@@ -76,10 +70,6 @@
     &--confidentiality,
     &--price {
       min-height: 232px;
-    }
-
-    &::before {
-      left: 25px;
     }
   }
 
@@ -110,63 +100,58 @@
 }
 
 .advantages__item svg {
-  order: -2;
+  order: -1;
   fill: $basic-blue;
-}
-
-.advantages__item--delay::before {
-  top: 40px;
-  width: 29px;
-  height: 35px;
-  mask-image: url("../img/icon-stopwatch.svg");
-  background-color: $basic-blue;
+  padding-bottom: 18px;
 
   @media (max-width: $tablet-max-width) {
-    top: 24px;
-    width: 29.38px;
-    height: 36.01px;
+    padding-bottom: 5px;
+  }
+
+  @media (max-width: $mobile-min-width) {
+    padding-bottom: 12px;
   }
 }
 
-.advantages__item--suppliers::before {
-  top: 40px;
-  width: 35px;
-  height: 35px;
-  mask-image: url("../img/icon-suppliers.svg");
-  background-color: $basic-blue;
+.advantages__item--confidentiality svg {
+  padding-top: 4px;
 
   @media (max-width: $tablet-max-width) {
-    top: 23px;
-    width: 31.72px;
-    height: 32px;
-  }
-}
-
-.advantages__item--confidentiality::before {
-  top: 44px;
-  width: 36px;
-  height: 31px;
-  mask-image: url("../img/icon-confidentiality.svg");
-  background-color: $basic-blue;
-
-  @media (max-width: $tablet-max-width) {
-    top: 24px;
+    padding-top: 3px;
+    padding-bottom: 10px;
     width: 30.31px;
     height: 26px;
   }
 }
 
-.advantages__item--price::before {
-  top: 40px;
-  width: 35px;
-  height: 35px;
-  mask-image: url("../img/icon-tag.svg");
-  background-color: $basic-blue;
-
+.advantages__item--delay svg {
   @media (max-width: $tablet-max-width) {
-    top: 24px;
+    width: 29.38px;
+    height: 36.01px;
+  }
+}
+
+.advantages__item--suppliers svg {
+  @media (max-width: $tablet-max-width) {
+    padding-bottom: 7px;
+    width: 31.72px;
+    height: 32px;
+  }
+
+  @media (max-width: $mobile-min-width) {
+    padding-bottom: 14px;
+  }
+}
+
+.advantages__item--price svg {
+  @media (max-width: $tablet-max-width) {
+    padding-bottom: 7px;
     width: 32.18px;
     height: 32px;
+  }
+
+  @media (max-width: $mobile-min-width) {
+    padding-bottom: 14px;
   }
 }
 
