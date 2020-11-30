@@ -8,7 +8,7 @@
     width: 590.85px;
   }
 
-  @media (max-width: $mobile-max-width) {
+  @media (max-width: 650px) {
     flex-direction: column;
     width: auto;
   }
@@ -34,7 +34,7 @@
     padding-left: 20px;
   }
 
-  @media (max-width: $mobile-max-width) {
+  @media (max-width: 650px) {
     width: auto;
     margin-bottom: 30.45px;
     padding-left: 17px;
@@ -89,7 +89,7 @@
     margin-bottom: 46px;
   }
 
-  @media (max-width: $mobile-max-width) {
+  @media (max-width: 650px) {
     width: auto;
     height: 104px;
     margin-bottom: 32px;
@@ -133,7 +133,7 @@
     margin-left: -5px;
   }
 
-  @media (max-width: $mobile-max-width) {
+  @media (max-width: 650px) {
     margin-left: -7px;
   }
 }
@@ -208,7 +208,7 @@
     margin-left: 3px;
   }
 
-  @media (max-width: $mobile-max-width) {
+  @media (max-width: 650px) {
     width: auto;
     margin-left: 0;
     margin-bottom: 23px;

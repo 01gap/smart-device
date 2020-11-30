@@ -5,13 +5,15 @@
 }
 
 .accordion__button {
-  // display: none;
+  text-align: left;
   background-color: transparent;
   width: 100%;
   border: none;
   padding: 0;
 
   @media (max-width: $mobile-max-width) {
+    box-sizing: border-box;
+    cursor: pointer;
     // display: block;
     // position: absolute;
     // top: 18px;
@@ -25,6 +27,7 @@
     &:hover,
     &:focus {
       outline: 1px solid rgba($basic-blue, 0.8);
+      outline-offset: 10px;
     }
   }
 }
@@ -33,7 +36,7 @@
   @media (max-width: $mobile-max-width) {
     position: absolute;
     content: "";
-    top: 12px;
+    top: 32px;
     right: 12px;
     width: 16px;
     height: 16px;

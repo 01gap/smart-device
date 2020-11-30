@@ -35,7 +35,8 @@
 }
 
 .advantages__item {
-  position: relative;
+  display: flex;
+  flex-direction: column;
   width: 570px;
   min-height: 299px;
   box-sizing: border-box;
@@ -106,6 +107,11 @@
   @media (max-width: $mobile-min-width) {
     margin-bottom: 20px;
   }
+}
+
+.advantages__item svg {
+  order: -2;
+  fill: $basic-blue;
 }
 
 .advantages__item--delay::before {
@@ -186,8 +192,8 @@
   background-color: $basic-blue;
   border-color: $basic-blue;
 
-  &::before {
-    background-color: $basic-light;
+  svg {
+    fill: $basic-light;
   }
 
   .advantages__item-title,

@@ -1,29 +1,29 @@
 'use strict';
 
 (function() {
-  const forms = document.querySelectorAll('.form');
-  const firstNames = document.querySelectorAll('input[type=text]');
-  const phones = document.querySelectorAll('input[type=tel]');
-  const messages = document.querySelectorAll('textarea');
-  const formSection = document.querySelector('.form-section');
+  var forms = document.querySelectorAll('.form');
+  var firstNames = document.querySelectorAll('input[type=text]');
+  var phones = document.querySelectorAll('input[type=tel]');
+  var messages = document.querySelectorAll('textarea');
+  var formSection = document.querySelector('.form-section');
 
 
-  const popup = document.querySelector('.modal');
-  const popupClose = popup.querySelector('.modal__close');
-  const contactUsLink = document.querySelector('.contact-us__callback');
+  var popup = document.querySelector('.modal');
+  var popupClose = popup.querySelector('.modal__close');
+  var contactUsLink = document.querySelector('.contact-us__callback');
 
-  const footerForm = {
+  var footerForm = {
     elements: [forms[0], firstNames[0], phones[0], messages[0]],
     flag: true
   }
 
-  const popupForm = {
+  var popupForm = {
     elements: [forms[1], firstNames[1], phones[1], messages[1]],
     subElements: [contactUsLink, popupClose],
     flag: true
   }
 
-  const userName = {
+  var userName = {
     domElementForm: firstNames[0],
     domElementPopup: firstNames[1],
     content: null,
@@ -31,7 +31,7 @@
     storageFlag: false
   };
 
-  const userPhone = {
+  var userPhone = {
     domElementForm: phones[0],
     domElementPopup: phones[1],
     content: null,
@@ -39,7 +39,7 @@
     storageFlag: false
   };
 
-  const userMessage = {
+  var userMessage = {
     domElementForm: messages[0],
     domElementPopup: messages[1],
     content: null,
@@ -47,32 +47,32 @@
     storageFlag: false
   };
 
-  const storageElements = [userName, userPhone, userMessage];
+  var storageElements = [userName, userPhone, userMessage];
 
   /* test dom elements for both forms */
 
-  const verifyFormElements = (obj) => {
-    obj.elements.forEach(element => {
+  var verifyFormElements = function (obj) {
+    obj.elements.forEach(function (element) {
       if (element === null) {
         obj.flag = false;
       }
     });
   };
 
-  const verifySubElements = (obj) => {
-    obj.subElements.forEach(element => {
+  var verifySubElements = function (obj) {
+    obj.subElements.forEach(function (element) {
       if (element === null) {
         obj.flag = false;
       }
     });
   };
 
-  const verifyFooterForm = () => {
+  var verifyFooterForm = function () {
     verifyFormElements(footerForm);
   };
 
 
-  const verifyPopupForm = () => {
+  var verifyPopupForm = function () {
     verifyFormElements(popupForm);
     verifySubElements(popupForm);
   };
@@ -82,9 +82,9 @@
 
   /* test storage */
 
-  const verifyStorage = () => {
-    storageElements.forEach(element => {
-      let memorized = localStorage.getItem(element.nameInStorage);
+  var verifyStorage = function () {
+    storageElements.forEach(function (element) {
+      var memorized = localStorage.getItem(element.nameInStorage);
       if (memorized !== null) {
         element.storageFlag = true;
         element.content = memorized;
@@ -96,15 +96,15 @@
 
   /* set phone mask */
 
-  const setPhoneMask = (inputElement) => {
-    const maskOptions = {
+  var setPhoneMask = function (inputElement) {
+    var maskOptions = {
       mask: '+7(000)0000000'
     };
 
-    const mask = IMask(inputElement, maskOptions);
+    var mask = IMask(inputElement, maskOptions);
 
     if (!userPhone.storageFlag || inputElement.value === "") {
-      inputElement.addEventListener('focus', () => {
+      inputElement.addEventListener('focus', function () {
         mask.value = '+7(';
       });
     }
@@ -112,18 +112,18 @@
 
   /* add stored data to footer inputs */
 
-  const addDataToFooterForm = () => {
-    storageElements.forEach(element => {
+  var addDataToFooterForm = function () {
+    storageElements.forEach(function (element) {
       if (element.storageFlag) {
-        let nodeElement = element.domElementForm;
+        var nodeElement = element.domElementForm;
         nodeElement.value = element.content;
       }
     });
   };
 
-  const onSubmitWriteDataToStorage = () => {
-    storageElements.forEach(element => {
-      let nodeElement = element.domElementForm;
+  var onSubmitWriteDataToStorage = function () {
+    storageElements.forEach(function (element) {
+      var nodeElement = element.domElementForm;
       if (nodeElement.value) {
         localStorage.setItem(element.nameInStorage, nodeElement.value);
       }
@@ -132,9 +132,9 @@
 
   /* validate footer form */
 
-  const validateFooterForm = () => {
+  var validateFooterForm = function () {
     if (footerForm.flag) {
-      formSection.addEventListener('mouseover', () => {
+      formSection.addEventListener('mouseover', function () {
         addDataToFooterForm();
       });
       setPhoneMask(phones[0]);
@@ -148,45 +148,46 @@
 
   /* add stored data to popup form */
 
-  const addDataToPopupForm = () => {
-    storageElements.forEach(element => {
+  var addDataToPopupForm = function () {
+    storageElements.forEach(function (element) {
       if (element.storageFlag) {
-        let nodeElement = element.domElementPopup;
+        var nodeElement = element.domElementPopup;
         nodeElement.value = element.content;
       }
     });
   };
 
   /* close popup */
-  const closePopup = () => {
+  var closePopup = function () {
+    document.querySelector('body').classList.remove('overlay');
     popup.classList.add('modal--closed');
     popupClose.removeEventListener('click', onClickClosePopup);
     window.removeEventListener('keydown', onEscPressClosePopup);
   };
 
-  const onClickClosePopup = () => {
+  var onClickClosePopup = function () {
     closePopup();
   }
 
   /* close popup on esc */
 
-  const onEscPressClosePopup = (evt) => {
+  var onEscPressClosePopup = function (evt) {
     if (evt.keyCode === 27) {
       evt.preventDefault();
       closePopup();
     }
   };
 
-  const onClickOutsideClose = (evt) => {
+  var onClickOutsideClose = function (evt) {
     if (evt.target === evt.currentTarget) {
       closePopup();
     }
   };
 
   /* on submit store data & close popup*/
-  const onSubmitStoreDataClosePopup = () => {
-    storageElements.forEach(element => {
-      let nodeElement = element.domElementPopup;
+  var onSubmitStoreDataClosePopup = function () {
+    storageElements.forEach(function (element) {
+      var nodeElement = element.domElementPopup;
       if (nodeElement.value) {
         localStorage.setItem(element.nameInStorage, nodeElement.value);
       }
@@ -196,7 +197,7 @@
 
   /* set focus on opening popup */
 
-  const setFocus = () => {
+  var setFocus = function () {
     if (firstNames[1].value === '') {
       firstNames[1].focus();
     } else if (phones[1].value === '') {
@@ -207,7 +208,8 @@
   };
 
   /* show popup */
-  const openPopup = () => {
+  var openPopup = function () {
+    document.querySelector('body').classList.add('overlay');
     popup.classList.remove('modal--closed');
     addDataToPopupForm();
     setFocus();
@@ -219,36 +221,70 @@
   };
 
   if (popupForm.flag) {
-    contactUsLink.addEventListener('click', (evt) => {
+    contactUsLink.addEventListener('click', function (evt) {
       evt.preventDefault();
       openPopup();
     });
   }
 
   /* accordion */
-  const mQueryMobile = window.matchMedia('(max-width: 767px)');
-  const accordionButtons = document.querySelectorAll('.accordion__button');
+  var mQueryMobile = window.matchMedia('(max-width: 767px)');
+  var accordionButtons = document.querySelectorAll('.accordion__button');
 
-  // const otherButtons = accordionButtons.slice().splice(button,1);
+  var setInitialToggle = function (toggle) {
+    toggle.setAttribute('aria-expanded', false);
+    toggle.classList.add('accordion__button--closed');
+  };
+
+  var setInitialPanel = function (toggle) {
+    var hiddenText = toggle.parentNode.parentNode.childNodes[3];
+    hiddenText.classList.add('accordion__panel--closed');
+  };
+
+  var closeOtherPanels = function (toggle) {
+    var otherToggles = Array.from(accordionButtons).filter(function (element) {
+      return element != toggle;
+    });
+    if (otherToggles.length) {
+      otherToggles.forEach(function (otherToggle) {
+        if (otherToggle.classList.contains('accordion__button--opened')) {
+          setInitialToggle(otherToggle);
+          setInitialPanel(otherToggle);
+        }
+      });
+    }
+  };
+
+  var setInitialAccordion = function (toggle) {
+    toggle.disabled = false;
+    setInitialToggle(toggle);
+    setInitialPanel(toggle);
+  };
+
+  var inverseAttributes = function (toggle) {
+    var hiddenText = toggle.parentNode.parentNode.childNodes[3];
+    var expanded = toggle.getAttribute('aria-expanded') === 'true';
+    toggle.setAttribute('aria-expanded', !expanded);
+    hiddenText.classList.toggle('accordion__panel--closed');
+  };
+
+  var inverseClasses = function (toggle) {
+    if (toggle.classList.contains('accordion__button--closed')) {
+      toggle.classList.remove('accordion__button--closed');
+      toggle.classList.add('accordion__button--opened');
+      closeOtherPanels(toggle);
+    } else {
+      toggle.classList.remove('accordion__button--opened');
+      toggle.classList.add('accordion__button--closed');
+    }
+  }
 
   if (mQueryMobile.matches && accordionButtons !== null) {
-    accordionButtons.forEach(button => {
-      button.classList.add('accordion__button--closed')
-      const hiddenText = button.parentNode.parentNode.childNodes[3];
-      hiddenText.classList.add('accordion__panel--closed');
-
-      button.addEventListener('click', () => {
-        let expanded = button.getAttribute('aria-expanded') === 'true';
-        button.setAttribute('aria-expanded', !expanded);
-        hiddenText.classList.toggle('accordion__panel--closed');
-
-        if (button.classList.contains('accordion__button--closed')) {
-          button.classList.remove('accordion__button--closed');
-          button.classList.add('accordion__button--opened');
-        } else {
-          button.classList.remove('accordion__button--opened');
-          button.classList.add('accordion__button--closed');
-        }
+    accordionButtons.forEach(function (button) {
+      setInitialAccordion(button);
+      button.addEventListener('click', function () {
+        inverseAttributes(button);
+        inverseClasses(button);
       });
     });
   }

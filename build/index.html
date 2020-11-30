@@ -171,7 +171,7 @@
             <label for="name">Ваше имя</label>
             <input type="tel" name="phone" value="" id="phone" pattern="^\+7\([0-9]{3}\)[0-9]{7}$" placeholder="Телефон" maxlength="14" required>
             <label for="phone">Ваш номер телефона</label>
-            <textarea name="message" cols="25" rows="4" id="message" maxlength="500" required></textarea>
+            <textarea name="message" cols="25" rows="4" id="message" maxlength="500" placeholder="Ваш вопрос" required></textarea>
             <label for="message">Ваш вопрос</label>
             <div class="form__checkbox-wrapper">
               <input id="checkbox-accept" type="checkbox" name="accept" value="accept" checked required>
@@ -229,13 +229,11 @@
           </section>
         </div>
         <nav class="page-footer__nav main-nav accordion">
-          <div class="accordion__toggle-wrapper">
-            <h2 class="main-nav__title title">
-              <button class="accordion__button" aria-expanded="true" aria-controls="nav-panel" disabled>
-                <span>Разделы сайта</span>
-              </button>
-            </h2>
-          </div>
+          <h2 class="main-nav__title title">
+            <button class="accordion__button" aria-expanded="true" aria-controls="nav-panel" disabled>
+              <span>Разделы сайта</span>
+            </button>
+          </h2>
           <div class="accordion__panel" id="nav-panel">
             <ul class="main-nav__list">
               <li class="main-nav__item"><a href="#">О компании</a></li>
@@ -249,13 +247,11 @@
           </div>
         </nav>
         <section class="page-footer__address accordion">
-          <div class="accordion__toggle-wrapper">
-            <h2 class="page-footer__address-title title">
-              <button class="accordion__button" aria-expanded="true" aria-controls="nav-panel">
-                <span>Наш офис</span>
-              </button>
-            </h2>
-          </div>
+          <h2 class="page-footer__address-title title">
+            <button class="accordion__button" aria-expanded="true" aria-controls="address-panel">
+              <span>Наш офис</span>
+            </button>
+          </h2>
           <div class="accordion__panel" id="address-panel">
             <p class="page-footer__address-text">
               г. Мытищи, Олимпийский проспект,&nbsp;д.10<br>
