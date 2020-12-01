@@ -467,7 +467,7 @@ img {
     .page-header__text {
       max-width: 290px;
       padding-left: 15px;
-      padding-top: 225px;
+      padding-top: 230px;
       margin: 0 auto; } }
 
 .page-header__title {
@@ -596,10 +596,12 @@ img {
   flex-wrap: wrap;
   align-items: baseline;
   padding-top: 4px;
-  padding-left: 50px; }
+  padding-left: 50px;
+  margin-top: -10px; }
   @media (max-width: 1023px) {
     .contact-us {
-      padding-top: 8px; } }
+      padding-top: 8px;
+      margin-top: 0; } }
   @media (max-width: 767px) {
     .contact-us {
       padding-top: 1px; } }
@@ -665,7 +667,8 @@ img {
     .contact-us__icon-phone {
       width: 24px;
       height: 24px;
-      margin-right: 0; }
+      margin-right: 0;
+      margin-bottom: 10px; }
       .contact-us__icon-phone:hover, .contact-us__icon-phone:focus {
         fill: #b3e8ff; }
       .contact-us__icon-phone:active {
@@ -679,6 +682,7 @@ img {
     .contact-us__icon-mail {
       width: 25.33px;
       height: 18.67px;
+      margin-bottom: 10px;
       margin-right: 0; }
       .contact-us__icon-mail:hover, .contact-us__icon-mail:focus {
         fill: #b3e8ff; }
@@ -694,6 +698,7 @@ img {
   border: 1px solid #ffffff;
   color: #ffffff;
   margin-left: 50px;
+  margin-top: 10px;
   padding-top: 13px;
   padding-left: 25px;
   padding-right: 27px;

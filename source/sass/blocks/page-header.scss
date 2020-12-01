@@ -38,7 +38,6 @@
 
 .page-header__top-wrapper {
   display: flex;
-  // flex-wrap: wrap;
   justify-content: space-between;
   width: 1410px;
   margin: 0 auto;
@@ -103,7 +102,7 @@
   @media (max-width: $mobile-max-width) {
     max-width: 290px;
     padding-left: 15px;
-    padding-top: 225px;
+    padding-top: 230px;
     margin: 0 auto;
   }
 }

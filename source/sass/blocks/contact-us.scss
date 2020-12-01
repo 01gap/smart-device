@@ -4,9 +4,11 @@
   align-items: baseline;
   padding-top: 4px;
   padding-left: 50px;
+  margin-top: -10px;
 
   @media (max-width: $tablet-max-width) {
     padding-top: 8px;
+    margin-top: 0;
   }
 
   @media (max-width: $mobile-max-width) {
@@ -86,6 +88,7 @@
     width: 24px;
     height: 24px;
     margin-right: 0;
+    margin-bottom: 10px;
 
     &:hover,
     &:focus {
@@ -106,6 +109,7 @@
   @media (max-width: $tablet-max-width) {
     width: 25.33px;
     height: 18.67px;
+    margin-bottom: 10px;
     margin-right: 0;
 
     &:hover,
@@ -128,6 +132,7 @@
   border: 1px solid $basic-light;
   color: $basic-light;
   margin-left: 50px;
+  margin-top: 10px;
   padding-top: 13px;
   padding-left: 25px;
   padding-right: 27px;
