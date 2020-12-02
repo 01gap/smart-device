@@ -1,10 +1,9 @@
 .contact-us {
   display: flex;
-  flex-wrap: wrap;
   align-items: baseline;
-  padding-top: 4px;
+  // align-items: flex-start;
+  padding-top: 2px;
   padding-left: 50px;
-  margin-top: -10px;
 
   @media (max-width: $tablet-max-width) {
     padding-top: 8px;
@@ -16,12 +15,24 @@
   }
 }
 
+.contact-us__mail-tel-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding-top: 15px;
+
+  @media (max-width: $tablet-max-width) {
+    padding-top: 4px;
+  }
+}
+
 .contact-us__mail,
 .contact-us__tel {
   display: block;
   text-decoration: none;
   color: $basic-light;
   line-height: 18px;
+  padding-bottom: 5px;
 }
 
 .contact-us__tel {
@@ -74,6 +85,10 @@
   }
 }
 
+.contact-us__tel span {
+  bottom: 4px;
+}
+
 .contact-us__icon-mail,
 .contact-us__icon-phone {
   fill: $basic-blue;
@@ -81,7 +96,6 @@
 
 .contact-us__icon-phone {
   position: relative;
-  top: 4px;
   margin-right: 6px;
 
   @media (max-width: $tablet-max-width) {
@@ -123,6 +137,11 @@
   }
 }
 
+.contact-us__callback-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
 .contact-us__callback {
   text-decoration: none;
   font-size: 14px;
@@ -131,8 +150,9 @@
   letter-spacing: 0.05em;
   border: 1px solid $basic-light;
   color: $basic-light;
+  width: 180px;
   margin-left: 50px;
-  margin-top: 10px;
+  margin-bottom: 10px;
   padding-top: 13px;
   padding-left: 25px;
   padding-right: 27px;

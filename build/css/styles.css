@@ -453,7 +453,7 @@ img {
 .page-header__text {
   width: 1410px;
   margin: 0 auto;
-  padding-top: 230px; }
+  padding-top: 222px; }
   @media (max-width: 1455px) {
     .page-header__text {
       width: auto;
@@ -467,7 +467,7 @@ img {
     .page-header__text {
       max-width: 290px;
       padding-left: 15px;
-      padding-top: 230px;
+      padding-top: 220px;
       margin: 0 auto; } }
 
 .page-header__title {
@@ -593,11 +593,9 @@ img {
 
 .contact-us {
   display: flex;
-  flex-wrap: wrap;
   align-items: baseline;
-  padding-top: 4px;
-  padding-left: 50px;
-  margin-top: -10px; }
+  padding-top: 2px;
+  padding-left: 50px; }
   @media (max-width: 1023px) {
     .contact-us {
       padding-top: 8px;
@@ -606,12 +604,22 @@ img {
     .contact-us {
       padding-top: 1px; } }
 
+.contact-us__mail-tel-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding-top: 15px; }
+  @media (max-width: 1023px) {
+    .contact-us__mail-tel-wrapper {
+      padding-top: 4px; } }
+
 .contact-us__mail,
 .contact-us__tel {
   display: block;
   text-decoration: none;
   color: #ffffff;
-  line-height: 18px; }
+  line-height: 18px;
+  padding-bottom: 5px; }
 
 .contact-us__tel {
   margin-left: 88px; }
@@ -655,13 +663,15 @@ img {
     .contact-us__mail span {
       display: none; } }
 
+.contact-us__tel span {
+  bottom: 4px; }
+
 .contact-us__icon-mail,
 .contact-us__icon-phone {
   fill: #00b2ff; }
 
 .contact-us__icon-phone {
   position: relative;
-  top: 4px;
   margin-right: 6px; }
   @media (max-width: 1023px) {
     .contact-us__icon-phone {
@@ -689,6 +699,10 @@ img {
       .contact-us__icon-mail:active {
         fill: #006b99; } }
 
+.contact-us__callback-wrapper {
+  display: flex;
+  align-items: flex-start; }
+
 .contact-us__callback {
   text-decoration: none;
   font-size: 14px;
@@ -697,8 +711,9 @@ img {
   letter-spacing: 0.05em;
   border: 1px solid #ffffff;
   color: #ffffff;
+  width: 180px;
   margin-left: 50px;
-  margin-top: 10px;
+  margin-bottom: 10px;
   padding-top: 13px;
   padding-left: 25px;
   padding-right: 27px;

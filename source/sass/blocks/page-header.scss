@@ -86,7 +86,7 @@
 .page-header__text {
   width: 1410px;
   margin: 0 auto;
-  padding-top: 230px;
+  padding-top: 222px;
 
   @media (max-width: $median-desktop-width) {
     width: auto;
@@ -102,7 +102,7 @@
   @media (max-width: $mobile-max-width) {
     max-width: 290px;
     padding-left: 15px;
-    padding-top: 230px;
+    padding-top: 220px;
     margin: 0 auto;
   }
 }
